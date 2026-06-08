@@ -41,9 +41,17 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ArbolMedicos.cs" />
     <Compile Include="Cita.cs" />
+    <Compile Include="ColaEmergencias.cs" />
+    <Compile Include="ConsultaMedica.cs" />
+    <Compile Include="HistorialClinico.cs" />
+    <Compile Include="ListaCitas.cs" />
     <Compile Include="LogicaListaPacientes.cs" />
     <Compile Include="Medico.cs" />
+    <Compile Include="NodoConsulta.cs" />
+    <Compile Include="NodoEmergencia.cs" />
+    <Compile Include="NodoMedico.cs" />
     <Compile Include="NodoPaciente.cs" />
     <Compile Include="Paciente.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

@@ -15,24 +15,26 @@ namespace ClasesHospital
         public int Edad { get; set; }
         public string DNI { get; set; }
         public string Telefono { get; set; }
+        public string Sexo { get; set; } 
         //Constructor vacio
         public Paciente() 
         {
 
         }
         //Constructor con parametros
-        public Paciente(int codigo, string nombre, int edad, string dni, string telefono) 
+        public Paciente(int codigo, string nombre, int edad, string dni, string telefono, string sexo) 
         {
             Codigo = codigo;
             Nombre = nombre;
             Edad = edad;
             DNI = dni;
             Telefono = telefono;
+            Sexo = sexo;
         }
         // Método para mostrar información
         public override string ToString()
         {
-            return $"{Codigo} - {Nombre} - {DNI}";
+            return $"{Codigo} - {Nombre} - {DNI} - {Sexo}";
         }
 
     }
