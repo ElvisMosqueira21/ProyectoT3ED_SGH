@@ -73,7 +73,7 @@ namespace ClasesHospital
             }
         }
         //Modificar
-        public bool ModificarPaciente(string dni,string nombres,int edad,string sexo,string telefono)
+        public bool ModificarPaciente(string dni,string nombres,int edad,string sexo)
         {
             Paciente paciente = BuscarPaciente(dni);
 
@@ -83,7 +83,6 @@ namespace ClasesHospital
             paciente.Nombre = nombres;
             paciente.Edad = edad;
             paciente.Sexo = sexo;
-            paciente.Telefono = telefono;
 
             return true;
         }
@@ -113,11 +112,7 @@ namespace ClasesHospital
             }
             return false;
         }
-        public bool ExistePaciente(string dni)
-        {
-            return BuscarPaciente(dni) != null;
-        }
-
+        
 
     }
 }

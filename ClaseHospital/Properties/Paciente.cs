@@ -15,8 +15,7 @@ namespace ClasesHospital
         public int Edad { get; set; }
         public string DNI { get; set; }
         public string Telefono { get; set; }
-        public string Sexo { get; set; }
-        public HistorialClinico Historial { get; set; }
+        public string Sexo { get; set; } 
         //Constructor vacio
         public Paciente() 
         {
@@ -31,7 +30,6 @@ namespace ClasesHospital
             DNI = dni;
             Telefono = telefono;
             Sexo = sexo;
-            Historial = new HistorialClinico();
         }
         // Método para mostrar información
         public override string ToString()

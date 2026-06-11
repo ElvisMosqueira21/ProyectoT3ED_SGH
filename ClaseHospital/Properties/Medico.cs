@@ -26,7 +26,7 @@ namespace ClasesHospital
 
         public override string ToString()
         {
-            return $"{Codigo} - {Nombre} - {Especialidad}";
+            return $"{Nombre} - {Especialidad}";
         }
     }
 }

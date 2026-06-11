@@ -1,4 +1,4 @@
 <Solution>
-  <Project Path="ClasesHospital/ClasesHospital.csproj" />
-  <Project Path="SistemaGestionHospital/SistemaGestionHospital.csproj" />
+  <Project Path="ClasesHospital/ClasesHospital.csproj" Id="5d458b20-17f6-4bf9-9144-bebfd9cd56f1" />
+  <Project Path="SistemaGestionHospital/SistemaGestionHospital.csproj" Id="15194e61-d825-483b-8378-cb53425b848f" />
 </Solution>

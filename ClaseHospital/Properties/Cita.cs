@@ -8,23 +8,27 @@ namespace ClasesHospital
 {
     public class Cita
     {
-        public int CodigoCita { get; set; }
+        public int Codigo { get; set; }
         public Paciente Paciente { get; set; }
         public Medico Medico { get; set; }
-        public DateTime FechaHora { get; set; }
+        public DateTime Fecha { get; set; }
 
-        public Cita(int codigoCita, Paciente paciente,
-                    Medico medico, DateTime fechaHora)
+        public Cita()
         {
-            CodigoCita = codigoCita;
+
+        }
+
+        public Cita(int codigo, Paciente paciente, Medico medico, DateTime fecha)
+        {
+            Codigo = codigo;
             Paciente = paciente;
             Medico = medico;
-            FechaHora = fechaHora;
+            Fecha = fecha;
         }
 
         public override string ToString()
         {
-            return $"Cita: {CodigoCita} | Paciente: {Paciente.Nombre} | Médico: {Medico.Nombre} | Fecha: {FechaHora}";
+            return $"{Fecha} - {Paciente.Nombre} - {Medico.Nombre}";
         }
     }
 }
